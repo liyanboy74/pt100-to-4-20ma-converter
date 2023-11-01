@@ -1,0 +1,22 @@
+* D:\Projects\1075-pt100-4-20ma-converter\Schematic1.sch
+
+* Schematics Version 9.2
+* Wed Nov 01 22:02:11 2023
+
+
+.PARAM         RL=100 
+
+** Analysis setup **
+.DC LIN PARAM RL 18 390 1 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
